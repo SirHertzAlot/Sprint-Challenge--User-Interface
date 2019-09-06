@@ -3,6 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,39 +17,44 @@
                 <a href="index.html"><img src="img/lambda-black.png" alt="Lambda School Logo"></a>
             </aside>
             <nav class="flex">
-                <a href="index.html">Home</a>
+                <a class="animated flash href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="#">Products</a>
                 <a href="#">Blog</a>
-                <a href="contact.html">Contacts</a>
+                <a a href="contact.html">Contacts</a>
             </nav>
             <img src="img/jumbo.jpg" alt="Header img for Lambda">
         </header>
         
         <section class="contact">
-            <form action="/contact">
-                <p>
-                    
-                    <Label>First Name</Label><br>
+            <form class="appear" name="contact" action="/contact">
+                <fieldset>
+                <p>  
+                    <Label for="first-name">First Name</Label><br>
                     <input type="text" name="first-name" value="John" autofocus required><br>
-                    
-                    <Label>Last Name</Label><br>
+                </p>
+                <p>
+                    <Label for="last-name">Last Name</Label><br>
                     <input type="text" name="last-name" value="Smith" required><br>
-                    
-                    <Label>Company Title</Label><br>
+                </p>
+                <p>   
+                    <Label for="comp-title">Company Title</Label><br>
                     <input type="text" name="comp-title" value="Founder" required><br>
-                    
-                    <Label>Company Name</Label><br>
+                </p>
+                <p>     
+                    <Label for="comp-name">Company Name</Label><br>
                     <input type="text" name="comp-name" value="Alphabet Company" required><br>
-                    
-                    <Label>Email Address</Label><br>
+                </p>
+                <p>    
+                    <Label for="email">Email Address</Label><br>
                     <input type="email" name="email" value="value@dns.com" required><br>
-                    
-                    <Label>Phone Number</Label><br>
+                </p>
+                <p>    
+                    <Label for="phone-num">Phone Number</Label><br>
                     <input type="tel" name="phone-num" value="123-456-7890" required maxlength="12"><br>
-                    
-                    <Label>Country</Label><br>
-                    
+                </p>
+                <p>    
+                    <Label for="Country">Country</Label><br>   
                     <select>
                         <option>China</option>
                         <option>India</option>
@@ -56,24 +62,23 @@
                         <option>Indonesia</option>
                         <option>Brazil</option>
                     </select><br>
-                     
-                    <label>
-                         <input type="checkbox" value="terms">
+                    </fieldset>
+                    <label for="terms">
+                         <input type="checkbox" name="terms" value="terms" required>
                          I agree to the <a href="/terms">terms and conditions</a>
                      </label><br>
-                    
-                     <button>Submit</button>
                 </p>
+                     <button>Submit</button>
             </form>
         </section>
 
         <footer>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#">About</a>
+                <a href="about.html">About</a>
                 <a href="#">Products</a>
                 <a href="#">Blog</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </footer>
     </div>
