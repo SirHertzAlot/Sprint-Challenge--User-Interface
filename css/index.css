@@ -71,6 +71,10 @@ p {
     margin: 0 auto;
 }
 
+.about-page {
+    width: 800px;
+}
+
 header {
     display:flex;
     flex-direction:row;
@@ -89,6 +93,10 @@ nav.flex {
     align-items: flex-end;
     width: 80%;
     margin-bottom: 5px;
+}
+
+.spacing {
+    margin-bottom: 30px;
 }
 
 nav.flex a {
@@ -112,7 +120,15 @@ nav.flex a {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+.about-middle-content {
+    margin-bottom: 20px;
+    border-top: 1px dashed black;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -199,4 +215,38 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+.widget {
+    width: 40%;
+    border-bottom: 1px dashed black;
+    padding: 20px 0px;
+}
+.widget img {
+    margin: 10px 0px;
+}
+.widget h1 {
+    margin: 5px 0px 3px 0px;
+}
+.widget p {
+    margin: 3px 0px;
+}
+
+.widget button {
+    margin: 10px 0px 5px 0px;
+    border-radius: 5px;
+    background: white;
+    color:black;
+    border: black solid 3px;
+    height: 45px;
+    width: 145px;
+    font-size: 15px;
+}
+.contact {
+    display:flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.contact > Label {
+    margin: 40px 0px;
 }

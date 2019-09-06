@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sprint-Challenge - Contact</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <aside>
+                <a href="index.html"><img src="img/lambda-black.png" alt="Lambda School Logo"></a>
+            </aside>
+            <nav class="flex">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contacts</a>
+            </nav>
+            <img src="img/jumbo.jpg" alt="Header img for Lambda">
+        </header>
+        
+        <section class="contact">
+            <form action="/contact">
+                <p>
+                    
+                    <Label>First Name</Label><br>
+                    <input type="text" name="first-name" value="John" autofocus required><br>
+                    
+                    <Label>Last Name</Label><br>
+                    <input type="text" name="last-name" value="Smith" required><br>
+                    
+                    <Label>Company Title</Label><br>
+                    <input type="text" name="comp-title" value="Founder" required><br>
+                    
+                    <Label>Company Name</Label><br>
+                    <input type="text" name="comp-name" value="Alphabet Company" required><br>
+                    
+                    <Label>Email Address</Label><br>
+                    <input type="email" name="email" value="value@dns.com" required><br>
+                    
+                    <Label>Phone Number</Label><br>
+                    <input type="tel" name="phone-num" value="123-456-7890" required maxlength="12"><br>
+                    
+                    <Label>Country</Label><br>
+                    
+                    <select>
+                        <option>China</option>
+                        <option>India</option>
+                        <option>United States</option>
+                        <option>Indonesia</option>
+                        <option>Brazil</option>
+                    </select><br>
+                     
+                    <label>
+                         <input type="checkbox" value="terms">
+                         I agree to the <a href="/terms">terms and conditions</a>
+                     </label><br>
+                    
+                     <button>Submit</button>
+                </p>
+            </form>
+        </section>
+
+        <footer>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
