@@ -229,10 +229,13 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
+}
+footer nav a:hover {
+    animation-name: appearAnce;
+    animation-duration: 1s;
 }
 .widget {
     width: 40%;
