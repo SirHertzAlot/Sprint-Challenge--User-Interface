@@ -1,3 +1,16 @@
+/* Animation keyframes */
+@keyframes appearAnce {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -71,6 +84,47 @@ p {
     margin: 0 auto;
 }
 
+.about-page {
+    width: 800px;
+}
+
+header {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin: 20px 0px;
+}
+
+header > img {
+    margin-top: 35px;
+}
+
+nav.flex {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.spacing {
+    margin-bottom: 30px;
+}
+
+nav.flex a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav.flex a:hover {
+    animation-name:appearAnce;
+    animation-duration: 1s;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +138,15 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+.about-middle-content {
+    margin-bottom: 20px;
+    border-top: 1px dashed black;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -104,14 +166,42 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.box1 {
+    background: teal;
+}
+.box2 {
+    background: gold;
+}
+.box3 {
+    background: cadetblue;
+}
+.box4 {
+    background: coral;
+}
+.box5 {
+    background: crimson;
+}
+.box6 {
+    background: forestgreen;
+}
+.box7 {
+    background: darkorchid;
+}
+.box8 {
+    background: hotpink
+}
+.box9 {
+    background: indigo;
+}
+.box10 {
+    background: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -139,8 +229,54 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
+}
+footer nav a:hover {
+    animation-name: appearAnce;
+    animation-duration: 1s;
+}
+.widget {
+    width: 40%;
+    border-bottom: 1px dashed black;
+    padding: 20px 0px;
+}
+.widget img {
+    margin: 10px 0px;
+}
+.widget h1 {
+    margin: 5px 0px 3px 0px;
+}
+.widget p {
+    margin: 3px 0px;
+}
+
+.widget button {
+    margin: 10px 0px 5px 0px;
+    border-radius: 5px;
+    background: white;
+    color:black;
+    border: black solid 3px;
+    height: 45px;
+    width: 145px;
+    font-size: 15px;
+}
+.contact {
+    display:flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+form p {
+    margin: 40px 0px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Animation classes */
+.appear {
+    animation-name:appearAnce;
+    animation-duration: 1s;
 }
